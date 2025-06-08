@@ -1,0 +1,132 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right,#01030a, #646b78, #01030a);
+
+  color: #080101;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+.a:hover{
+  color:red;
+}
+
+/* Header */
+header {
+  background-color: #1c2738;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+}
+
+/* Navigation */
+nav {
+  background-color: #374151;
+  text-align: center;
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 19px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.17s ease;
+}
+
+nav a:hover {
+  color: #c7c6d3;
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background: linear-gradient(to right,#b4b4d8, #fafafa, #fafafa, #fafafa, #b4b4d8);
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  color: #1f2937;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 25px;
+  box-shadow: 0 6px 18px rgba(24, 23, 47, 0.9);
+}
+.profile-pic:hover{
+  box-shadow: 0 6px 18px rgba(24, 23, 47, 900);
+}
+/* Footer */
+footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+.d {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+  text-decoration: none;
+
+}
+.d:hover {
+  color: #c7c6d3;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+}
